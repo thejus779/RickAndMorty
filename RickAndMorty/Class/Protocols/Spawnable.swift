@@ -22,11 +22,6 @@ protocol Spawnable {
 
 }
 
-extension Spawnable {
-    static var storyboardName: String? { return nil }
-    static var storyboardIdentifier: String? { return nil }
-}
-
 extension Spawnable where Self: UIViewController {
     static func spawn() -> Self {
         

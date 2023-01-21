@@ -11,7 +11,7 @@ import UIKit
 protocol RMEpisodesCoordinatorDelegate: AnyObject {
 }
 
-class RMEpisodesCoordinator: NSObject {
+class RMEpisodesCoordinator: NSObject, NavigatorPresentable {
     
     var navigationController: UINavigationController
     let engine: Engine
@@ -33,4 +33,14 @@ class RMEpisodesCoordinator: NSObject {
 }
 
 extension RMEpisodesCoordinator: RMEpisodesCoordinatorDelegate {
+}
+
+extension RMEpisodesCoordinator: TabBarRepresentable {
+    var icon: UIImage {
+        return UIImage()
+    }
+
+    var title: String {
+        return "Episodes"
+    }
 }
