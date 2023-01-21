@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		53497245297BE17D00609FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53497244297BE17D00609FA6 /* AppDelegate.swift */; };
-		53497247297BE17D00609FA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53497246297BE17D00609FA6 /* SceneDelegate.swift */; };
 		53497249297BE17D00609FA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53497248297BE17D00609FA6 /* ViewController.swift */; };
 		5349724C297BE17D00609FA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5349724A297BE17D00609FA6 /* Main.storyboard */; };
 		5349724E297BE17E00609FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5349724D297BE17E00609FA6 /* Assets.xcassets */; };
@@ -16,6 +15,42 @@
 		5349725C297BE17E00609FA6 /* RickAndMortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349725B297BE17E00609FA6 /* RickAndMortyTests.swift */; };
 		53497266297BE17E00609FA6 /* RickAndMortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53497265297BE17E00609FA6 /* RickAndMortyUITests.swift */; };
 		53497268297BE17E00609FA6 /* RickAndMortyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53497267297BE17E00609FA6 /* RickAndMortyUITestsLaunchTests.swift */; };
+		53497281297BE2A300609FA6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53497280297BE2A300609FA6 /* AppCoordinator.swift */; };
+		53497283297BE2E300609FA6 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53497282297BE2E300609FA6 /* Engine.swift */; };
+		53497286297BE33800609FA6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53497285297BE33800609FA6 /* NetworkClient.swift */; };
+		53497287297BE33800609FA6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53497285297BE33800609FA6 /* NetworkClient.swift */; };
+		5349728A297BE35B00609FA6 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53497289297BE35B00609FA6 /* EndPointType.swift */; };
+		5349728B297BE35B00609FA6 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53497289297BE35B00609FA6 /* EndPointType.swift */; };
+		5349728D297BE37D00609FA6 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349728C297BE37D00609FA6 /* Results.swift */; };
+		5349728E297BE37D00609FA6 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349728C297BE37D00609FA6 /* Results.swift */; };
+		53497290297BE39E00609FA6 /* RMNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349728F297BE39E00609FA6 /* RMNetworkClient.swift */; };
+		53497291297BE39E00609FA6 /* RMNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349728F297BE39E00609FA6 /* RMNetworkClient.swift */; };
+		535F154E297C524D007873A8 /* RMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F154D297C524D007873A8 /* RMService.swift */; };
+		535F154F297C524D007873A8 /* RMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F154D297C524D007873A8 /* RMService.swift */; };
+		535F1554297C5354007873A8 /* RMNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1553297C5354007873A8 /* RMNetworkService.swift */; };
+		535F1555297C5354007873A8 /* RMNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1553297C5354007873A8 /* RMNetworkService.swift */; };
+		535F1557297C5362007873A8 /* RMMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1556297C5362007873A8 /* RMMockService.swift */; };
+		535F1558297C5362007873A8 /* RMMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1556297C5362007873A8 /* RMMockService.swift */; };
+		535F155A297C542C007873A8 /* RMEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1559297C542C007873A8 /* RMEndPoints.swift */; };
+		535F155B297C542C007873A8 /* RMEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1559297C542C007873A8 /* RMEndPoints.swift */; };
+		535F155E297C5578007873A8 /* RMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F155D297C5578007873A8 /* RMError.swift */; };
+		535F155F297C5578007873A8 /* RMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F155D297C5578007873A8 /* RMError.swift */; };
+		535F1565297C5B24007873A8 /* RMEpisodesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1564297C5B24007873A8 /* RMEpisodesCoordinator.swift */; };
+		535F1566297C5B25007873A8 /* RMEpisodesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1564297C5B24007873A8 /* RMEpisodesCoordinator.swift */; };
+		535F1568297C5B37007873A8 /* RMCharachtersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1567297C5B37007873A8 /* RMCharachtersCoordinator.swift */; };
+		535F1569297C5B37007873A8 /* RMCharachtersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1567297C5B37007873A8 /* RMCharachtersCoordinator.swift */; };
+		535F156B297C5B42007873A8 /* RMLocationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F156A297C5B42007873A8 /* RMLocationsCoordinator.swift */; };
+		535F156C297C5B42007873A8 /* RMLocationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F156A297C5B42007873A8 /* RMLocationsCoordinator.swift */; };
+		535F156E297C5BC5007873A8 /* Spawnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F156D297C5BC5007873A8 /* Spawnable.swift */; };
+		535F156F297C5BC5007873A8 /* Spawnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F156D297C5BC5007873A8 /* Spawnable.swift */; };
+		535F1572297C5BE4007873A8 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1571297C5BE4007873A8 /* Reusable.swift */; };
+		535F1573297C5BE4007873A8 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1571297C5BE4007873A8 /* Reusable.swift */; };
+		535F1575297C5C17007873A8 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1574297C5C17007873A8 /* UIViewController+Alerts.swift */; };
+		535F1576297C5C17007873A8 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1574297C5C17007873A8 /* UIViewController+Alerts.swift */; };
+		535F1578297C5C33007873A8 /* UIViewController+Shadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1577297C5C33007873A8 /* UIViewController+Shadows.swift */; };
+		535F1579297C5C33007873A8 /* UIViewController+Shadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F1577297C5C33007873A8 /* UIViewController+Shadows.swift */; };
+		535F157B297C5C4A007873A8 /* HideBackTitleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F157A297C5C4A007873A8 /* HideBackTitleNavigationController.swift */; };
+		535F157C297C5C4A007873A8 /* HideBackTitleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F157A297C5C4A007873A8 /* HideBackTitleNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +73,6 @@
 /* Begin PBXFileReference section */
 		53497241297BE17D00609FA6 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53497244297BE17D00609FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		53497246297BE17D00609FA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53497248297BE17D00609FA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5349724B297BE17D00609FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5349724D297BE17E00609FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +83,25 @@
 		53497261297BE17E00609FA6 /* RickAndMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53497265297BE17E00609FA6 /* RickAndMortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITests.swift; sourceTree = "<group>"; };
 		53497267297BE17E00609FA6 /* RickAndMortyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53497280297BE2A300609FA6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		53497282297BE2E300609FA6 /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		53497285297BE33800609FA6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		53497289297BE35B00609FA6 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		5349728C297BE37D00609FA6 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		5349728F297BE39E00609FA6 /* RMNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMNetworkClient.swift; sourceTree = "<group>"; };
+		535F154D297C524D007873A8 /* RMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMService.swift; sourceTree = "<group>"; };
+		535F1553297C5354007873A8 /* RMNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMNetworkService.swift; sourceTree = "<group>"; };
+		535F1556297C5362007873A8 /* RMMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMMockService.swift; sourceTree = "<group>"; };
+		535F1559297C542C007873A8 /* RMEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndPoints.swift; sourceTree = "<group>"; };
+		535F155D297C5578007873A8 /* RMError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMError.swift; sourceTree = "<group>"; };
+		535F1564297C5B24007873A8 /* RMEpisodesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodesCoordinator.swift; sourceTree = "<group>"; };
+		535F1567297C5B37007873A8 /* RMCharachtersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharachtersCoordinator.swift; sourceTree = "<group>"; };
+		535F156A297C5B42007873A8 /* RMLocationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationsCoordinator.swift; sourceTree = "<group>"; };
+		535F156D297C5BC5007873A8 /* Spawnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spawnable.swift; sourceTree = "<group>"; };
+		535F1571297C5BE4007873A8 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		535F1574297C5C17007873A8 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		535F1577297C5C33007873A8 /* UIViewController+Shadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Shadows.swift"; sourceTree = "<group>"; };
+		535F157A297C5C4A007873A8 /* HideBackTitleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideBackTitleNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +152,12 @@
 		53497243297BE17D00609FA6 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
-				53497244297BE17D00609FA6 /* AppDelegate.swift */,
-				53497246297BE17D00609FA6 /* SceneDelegate.swift */,
+				5349727A297BE1F000609FA6 /* Application */,
+				53497279297BE1D900609FA6 /* EngineModule */,
+				53497275297BE1AA00609FA6 /* Class */,
+				53497274297BE19700609FA6 /* Resources */,
 				53497248297BE17D00609FA6 /* ViewController.swift */,
 				5349724A297BE17D00609FA6 /* Main.storyboard */,
-				5349724D297BE17E00609FA6 /* Assets.xcassets */,
-				5349724F297BE17E00609FA6 /* LaunchScreen.storyboard */,
 				53497252297BE17E00609FA6 /* Info.plist */,
 			);
 			path = RickAndMorty;
@@ -127,6 +180,176 @@
 			path = RickAndMortyUITests;
 			sourceTree = "<group>";
 		};
+		53497274297BE19700609FA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5349724D297BE17E00609FA6 /* Assets.xcassets */,
+				5349724F297BE17E00609FA6 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53497275297BE1AA00609FA6 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				535F1570297C5BD4007873A8 /* Extensions */,
+				53497278297BE1CC00609FA6 /* Protocols */,
+				53497277297BE1BD00609FA6 /* Coordinators */,
+				53497276297BE1B500609FA6 /* Controllers */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		53497276297BE1B500609FA6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		53497277297BE1BD00609FA6 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				53497280297BE2A300609FA6 /* AppCoordinator.swift */,
+				535F1564297C5B24007873A8 /* RMEpisodesCoordinator.swift */,
+				535F1567297C5B37007873A8 /* RMCharachtersCoordinator.swift */,
+				535F156A297C5B42007873A8 /* RMLocationsCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		53497278297BE1CC00609FA6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				535F156D297C5BC5007873A8 /* Spawnable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		53497279297BE1D900609FA6 /* EngineModule */ = {
+			isa = PBXGroup;
+			children = (
+				5349727F297BE23300609FA6 /* Engine */,
+				5349727E297BE22700609FA6 /* Services */,
+				5349727D297BE21F00609FA6 /* Utils */,
+				5349727C297BE21800609FA6 /* Network Capabilities */,
+				5349727B297BE21200609FA6 /* Models */,
+			);
+			path = EngineModule;
+			sourceTree = "<group>";
+		};
+		5349727A297BE1F000609FA6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				53497244297BE17D00609FA6 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5349727B297BE21200609FA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5349727C297BE21800609FA6 /* Network Capabilities */ = {
+			isa = PBXGroup;
+			children = (
+				53497288297BE35000609FA6 /* EndPoints */,
+				53497284297BE32800609FA6 /* NetworkClient */,
+			);
+			path = "Network Capabilities";
+			sourceTree = "<group>";
+		};
+		5349727D297BE21F00609FA6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5349728C297BE37D00609FA6 /* Results.swift */,
+				535F155D297C5578007873A8 /* RMError.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5349727E297BE22700609FA6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				535F1550297C532F007873A8 /* RMService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5349727F297BE23300609FA6 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				53497282297BE2E300609FA6 /* Engine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		53497284297BE32800609FA6 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				53497285297BE33800609FA6 /* NetworkClient.swift */,
+				5349728F297BE39E00609FA6 /* RMNetworkClient.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		53497288297BE35000609FA6 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				53497289297BE35B00609FA6 /* EndPointType.swift */,
+				535F155C297C54D9007873A8 /* RMEndPoints */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		535F1550297C532F007873A8 /* RMService */ = {
+			isa = PBXGroup;
+			children = (
+				535F154D297C524D007873A8 /* RMService.swift */,
+				535F1552297C5341007873A8 /* Network */,
+				535F1551297C533A007873A8 /* Mocked */,
+			);
+			path = RMService;
+			sourceTree = "<group>";
+		};
+		535F1551297C533A007873A8 /* Mocked */ = {
+			isa = PBXGroup;
+			children = (
+				535F1556297C5362007873A8 /* RMMockService.swift */,
+			);
+			path = Mocked;
+			sourceTree = "<group>";
+		};
+		535F1552297C5341007873A8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				535F1553297C5354007873A8 /* RMNetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		535F155C297C54D9007873A8 /* RMEndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				535F1559297C542C007873A8 /* RMEndPoints.swift */,
+			);
+			path = RMEndPoints;
+			sourceTree = "<group>";
+		};
+		535F1570297C5BD4007873A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				535F1571297C5BE4007873A8 /* Reusable.swift */,
+				535F1574297C5C17007873A8 /* UIViewController+Alerts.swift */,
+				535F1577297C5C33007873A8 /* UIViewController+Shadows.swift */,
+				535F157A297C5C4A007873A8 /* HideBackTitleNavigationController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +366,8 @@
 			dependencies = (
 			);
 			name = RickAndMorty;
+			packageProductDependencies = (
+			);
 			productName = RickAndMorty;
 			productReference = 53497241297BE17D00609FA6 /* RickAndMorty.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +440,8 @@
 				Base,
 			);
 			mainGroup = 53497238297BE17D00609FA6;
+			packageReferences = (
+			);
 			productRefGroup = 53497242297BE17D00609FA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +485,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53497290297BE39E00609FA6 /* RMNetworkClient.swift in Sources */,
+				535F156E297C5BC5007873A8 /* Spawnable.swift in Sources */,
+				53497281297BE2A300609FA6 /* AppCoordinator.swift in Sources */,
+				53497286297BE33800609FA6 /* NetworkClient.swift in Sources */,
+				5349728A297BE35B00609FA6 /* EndPointType.swift in Sources */,
+				5349728D297BE37D00609FA6 /* Results.swift in Sources */,
+				535F1575297C5C17007873A8 /* UIViewController+Alerts.swift in Sources */,
+				535F155E297C5578007873A8 /* RMError.swift in Sources */,
+				535F156B297C5B42007873A8 /* RMLocationsCoordinator.swift in Sources */,
+				53497283297BE2E300609FA6 /* Engine.swift in Sources */,
+				535F1578297C5C33007873A8 /* UIViewController+Shadows.swift in Sources */,
 				53497249297BE17D00609FA6 /* ViewController.swift in Sources */,
+				535F1554297C5354007873A8 /* RMNetworkService.swift in Sources */,
+				535F1565297C5B24007873A8 /* RMEpisodesCoordinator.swift in Sources */,
+				535F1572297C5BE4007873A8 /* Reusable.swift in Sources */,
+				535F1568297C5B37007873A8 /* RMCharachtersCoordinator.swift in Sources */,
+				535F157B297C5C4A007873A8 /* HideBackTitleNavigationController.swift in Sources */,
+				535F1557297C5362007873A8 /* RMMockService.swift in Sources */,
 				53497245297BE17D00609FA6 /* AppDelegate.swift in Sources */,
-				53497247297BE17D00609FA6 /* SceneDelegate.swift in Sources */,
+				535F154E297C524D007873A8 /* RMService.swift in Sources */,
+				535F155A297C542C007873A8 /* RMEndPoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +513,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535F1558297C5362007873A8 /* RMMockService.swift in Sources */,
 				5349725C297BE17E00609FA6 /* RickAndMortyTests.swift in Sources */,
+				53497287297BE33800609FA6 /* NetworkClient.swift in Sources */,
+				535F1555297C5354007873A8 /* RMNetworkService.swift in Sources */,
+				535F1569297C5B37007873A8 /* RMCharachtersCoordinator.swift in Sources */,
+				535F154F297C524D007873A8 /* RMService.swift in Sources */,
+				535F156C297C5B42007873A8 /* RMLocationsCoordinator.swift in Sources */,
+				535F157C297C5C4A007873A8 /* HideBackTitleNavigationController.swift in Sources */,
+				535F1566297C5B25007873A8 /* RMEpisodesCoordinator.swift in Sources */,
+				5349728E297BE37D00609FA6 /* Results.swift in Sources */,
+				535F1579297C5C33007873A8 /* UIViewController+Shadows.swift in Sources */,
+				535F1573297C5BE4007873A8 /* Reusable.swift in Sources */,
+				535F156F297C5BC5007873A8 /* Spawnable.swift in Sources */,
+				535F1576297C5C17007873A8 /* UIViewController+Alerts.swift in Sources */,
+				5349728B297BE35B00609FA6 /* EndPointType.swift in Sources */,
+				53497291297BE39E00609FA6 /* RMNetworkClient.swift in Sources */,
+				535F155B297C542C007873A8 /* RMEndPoints.swift in Sources */,
+				535F155F297C5578007873A8 /* RMError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,9 +713,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thejus.RickAndMorty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,9 +743,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thejus.RickAndMorty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -496,9 +764,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thejus.RickAndMortyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RickAndMorty.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RickAndMorty";
 			};
 			name = Debug;
@@ -515,9 +786,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thejus.RickAndMortyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RickAndMorty.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RickAndMorty";
 			};
 			name = Release;
@@ -532,9 +806,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thejus.RickAndMortyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = RickAndMorty;
 			};
 			name = Debug;
@@ -549,9 +826,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thejus.RickAndMortyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = RickAndMorty;
 			};
 			name = Release;
