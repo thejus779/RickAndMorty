@@ -70,6 +70,14 @@
 		535F15A3297D2C70007873A8 /* CharachtersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15A1297D2C70007873A8 /* CharachtersViewModel.swift */; };
 		535F15A5297D2C75007873A8 /* CharachterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15A4297D2C75007873A8 /* CharachterDetailsViewModel.swift */; };
 		535F15A6297D2C75007873A8 /* CharachterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15A4297D2C75007873A8 /* CharachterDetailsViewModel.swift */; };
+		535F15A8297D2EDC007873A8 /* RMLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15A7297D2EDC007873A8 /* RMLocation.swift */; };
+		535F15A9297D2EDC007873A8 /* RMLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15A7297D2EDC007873A8 /* RMLocation.swift */; };
+		535F15AB297D2EE3007873A8 /* RMEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15AA297D2EE3007873A8 /* RMEpisode.swift */; };
+		535F15AC297D2EE3007873A8 /* RMEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15AA297D2EE3007873A8 /* RMEpisode.swift */; };
+		535F15AE297D2EF1007873A8 /* RMCharachter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15AD297D2EF1007873A8 /* RMCharachter.swift */; };
+		535F15AF297D2EF1007873A8 /* RMCharachter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15AD297D2EF1007873A8 /* RMCharachter.swift */; };
+		535F15B1297D313B007873A8 /* RMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15B0297D313B007873A8 /* RMData.swift */; };
+		535F15B2297D313B007873A8 /* RMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15B0297D313B007873A8 /* RMData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +138,10 @@
 		535F159E297D2C6A007873A8 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		535F15A1297D2C70007873A8 /* CharachtersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharachtersViewModel.swift; sourceTree = "<group>"; };
 		535F15A4297D2C75007873A8 /* CharachterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharachterDetailsViewModel.swift; sourceTree = "<group>"; };
+		535F15A7297D2EDC007873A8 /* RMLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocation.swift; sourceTree = "<group>"; };
+		535F15AA297D2EE3007873A8 /* RMEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisode.swift; sourceTree = "<group>"; };
+		535F15AD297D2EF1007873A8 /* RMCharachter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharachter.swift; sourceTree = "<group>"; };
+		535F15B0297D313B007873A8 /* RMData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +293,10 @@
 		5349727B297BE21200609FA6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				535F15B0297D313B007873A8 /* RMData.swift */,
+				535F15A7297D2EDC007873A8 /* RMLocation.swift */,
+				535F15AA297D2EE3007873A8 /* RMEpisode.swift */,
+				535F15AD297D2EF1007873A8 /* RMCharachter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -619,6 +635,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53497290297BE39E00609FA6 /* RMNetworkClient.swift in Sources */,
+				535F15AE297D2EF1007873A8 /* RMCharachter.swift in Sources */,
 				535F156E297C5BC5007873A8 /* Spawnable.swift in Sources */,
 				535F158D297D2B5C007873A8 /* CharachterDetailsViewController.swift in Sources */,
 				535F159F297D2C6A007873A8 /* LocationsViewModel.swift in Sources */,
@@ -636,13 +653,16 @@
 				535F156B297C5B42007873A8 /* RMLocationsCoordinator.swift in Sources */,
 				53497283297BE2E300609FA6 /* Engine.swift in Sources */,
 				535F1578297C5C33007873A8 /* UIViewController+Shadows.swift in Sources */,
+				535F15AB297D2EE3007873A8 /* RMEpisode.swift in Sources */,
 				535F1554297C5354007873A8 /* RMNetworkService.swift in Sources */,
 				535F1565297C5B24007873A8 /* RMEpisodesCoordinator.swift in Sources */,
 				535F15A2297D2C70007873A8 /* CharachtersViewModel.swift in Sources */,
 				535F1572297C5BE4007873A8 /* Reusable.swift in Sources */,
+				535F15B1297D313B007873A8 /* RMData.swift in Sources */,
 				535F1568297C5B37007873A8 /* RMCharachtersCoordinator.swift in Sources */,
 				535F157B297C5C4A007873A8 /* HideBackTitleNavigationController.swift in Sources */,
 				535F1557297C5362007873A8 /* RMMockService.swift in Sources */,
+				535F15A8297D2EDC007873A8 /* RMLocation.swift in Sources */,
 				53497245297BE17D00609FA6 /* AppDelegate.swift in Sources */,
 				535F154E297C524D007873A8 /* RMService.swift in Sources */,
 				535F1595297D2B89007873A8 /* EpisodesViewController.swift in Sources */,
@@ -655,6 +675,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535F15B2297D313B007873A8 /* RMData.swift in Sources */,
 				535F1558297C5362007873A8 /* RMMockService.swift in Sources */,
 				5349725C297BE17E00609FA6 /* RickAndMortyTests.swift in Sources */,
 				535F158B297C8544007873A8 /* Representables.swift in Sources */,
@@ -667,8 +688,11 @@
 				535F154F297C524D007873A8 /* RMService.swift in Sources */,
 				535F1584297C69E6007873A8 /* CharachtersViewController.swift in Sources */,
 				535F156C297C5B42007873A8 /* RMLocationsCoordinator.swift in Sources */,
+				535F15AC297D2EE3007873A8 /* RMEpisode.swift in Sources */,
 				535F157C297C5C4A007873A8 /* HideBackTitleNavigationController.swift in Sources */,
+				535F15A9297D2EDC007873A8 /* RMLocation.swift in Sources */,
 				535F158E297D2B5C007873A8 /* CharachterDetailsViewController.swift in Sources */,
+				535F15AF297D2EF1007873A8 /* RMCharachter.swift in Sources */,
 				535F1566297C5B25007873A8 /* RMEpisodesCoordinator.swift in Sources */,
 				535F1588297C6D76007873A8 /* RMTabController.swift in Sources */,
 				5349728E297BE37D00609FA6 /* Results.swift in Sources */,
