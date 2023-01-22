@@ -12,6 +12,6 @@ struct RMData<T: Codable>: Codable {
     let results: [T]
     
     struct RMInfo: Codable {
-        let next: String?
+        let pages: Int
     }
 }

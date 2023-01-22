@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 protocol RMCharachtersCoordinatorDelegate: AnyObject {
+    func showDetails(of character: RMCharachter)
 }
 
 class RMCharachtersCoordinator: NSObject, NavigatorPresentable {
@@ -23,19 +24,29 @@ class RMCharachtersCoordinator: NSObject, NavigatorPresentable {
         
         super.init()
                 
-        let charachtersViewController = CharachtersViewController.spawn()
+        let charachtersViewController = CharachtersViewController.spawn(
+            charachtersCoordinatorDelegate: self,
+            viewModel: CharachtersViewModel(engine: engine)
+        )
         navigationController.setViewControllers([charachtersViewController], animated: false)
         navigationController.navigationBar.isHidden = true
     }
 }
 
-extension RMCharachtersCoordinator: RMCharachtersCoordinatorDelegate {}
+extension RMCharachtersCoordinator: RMCharachtersCoordinatorDelegate {
+    func showDetails(of character: RMCharachter) {
+        let charachterDetailsViewController = CharachterDetailsViewController.spawn(
+            viewModel: CharachterDetailsViewModel(engine: engine)
+        )
+        navigationController.pushViewController(charachterDetailsViewController, animated: true)
+    }
+}
 
 extension RMCharachtersCoordinator: TabBarRepresentable {
     var icon: UIImage {
         UIImage(systemName: "person.circle")!
     }
     var title: String {
-        return "Cast"
+        return "Charachters"
     }
 }
