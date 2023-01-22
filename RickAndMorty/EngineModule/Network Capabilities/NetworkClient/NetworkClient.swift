@@ -8,13 +8,16 @@
 import Foundation
 
 class NetworkClient {
+    
+    static let defaultSessionConfiguration = URLSessionConfiguration.default
+    let session = URLSession(configuration: NetworkClient.defaultSessionConfiguration)
+    
     @discardableResult
     public func request(
         url: URL,
         verb: HTTPVerb,
         httpBody: Data?,
         headers: [String: String]?,
-        completeOnMainThread: Bool = true,
         completion: @escaping NetworkResultCompletion
     ) -> URLSessionDataTask? {
         var urlRequest = URLRequest(url: url)
@@ -22,12 +25,11 @@ class NetworkClient {
         urlRequest.httpBody = httpBody
         urlRequest.allHTTPHeaderFields = headers
 
-        let task = NetworkClient.session.dataTask(with: urlRequest) { (data, response, error) in
+        let task = session.dataTask(with: urlRequest) { (data, response, error) in
             self.handle(
                 response: response,
                 data: data,
                 error: error,
-                onMainThread: completeOnMainThread,
                 completion: completion
             )
         }
@@ -40,7 +42,6 @@ class NetworkClient {
         response: URLResponse?,
         data: Data?,
         error: Error?,
-        onMainThread: Bool,
         completion: @escaping NetworkResultCompletion
     ) {
         if let error = error {
@@ -48,35 +49,30 @@ class NetworkClient {
                 // the request was cancelled by the user, forget about it
                 return
             }
-            forwardResult(.error(error), onMainThread: onMainThread, completion: completion)
+            forwardResult(.error(error), completion: completion)
             return
         }
         
         guard let httpResponse = response as? HTTPURLResponse else {
-            forwardResult(.error(RMError.unknown), onMainThread: onMainThread, completion: completion)
+            forwardResult(.error(RMError.unknown), completion: completion)
             return
         }
         guard httpResponse.statusCode >= 200  else {
-            forwardResult(.error(RMError.serverError), onMainThread: onMainThread, completion: completion)
+            forwardResult(.error(RMError.serverError), completion: completion)
             return
         }
         var dataResult: Data?
         if let d = data, !d.isEmpty {
             dataResult = d
         } else {
-            forwardResult(.error(RMError.noData), onMainThread: onMainThread, completion: completion)
+            forwardResult(.error(RMError.noData), completion: completion)
         }
         
-        forwardResult(.success(data: dataResult), onMainThread: onMainThread, completion: completion)
+        forwardResult(.success(data: dataResult), completion: completion)
     }
     
     // MARK: - Thread Helper to forward the result
-    private func forwardResult(_ result: NetworkResult, onMainThread: Bool, completion: @escaping NetworkResultCompletion) {
-        guard onMainThread else {
-            // Not advised to do this, can potentially cause crashes if you updated UI in a background thread
-            completion(result)
-            return
-        }
+    private func forwardResult(_ result: NetworkResult, completion: @escaping NetworkResultCompletion) {
         guard Thread.current != Thread.main else {
             // Already on main thread forward
             completion(result)
@@ -85,20 +81,5 @@ class NetworkClient {
         DispatchQueue.main.async {
             completion(result)
         }
-    }
-}
-
-// MARK: - Session configurations
-extension NetworkClient {
-    static var session: URLSession = {
-        let sessionConfiguration = NetworkClient.commonSessionConfiguration()
-        sessionConfiguration.waitsForConnectivity = true
-        return URLSession(configuration: sessionConfiguration)
-    }()
-
-    static private func commonSessionConfiguration() -> URLSessionConfiguration {
-        let sessionConfiguration = URLSessionConfiguration.default
-        sessionConfiguration.shouldUseExtendedBackgroundIdleMode = true
-        return sessionConfiguration
     }
 }

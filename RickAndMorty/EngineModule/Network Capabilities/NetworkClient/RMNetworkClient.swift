@@ -15,7 +15,6 @@ class RMNetworkClient: NetworkClient {
         endpoint: T,
         parameters: [String: Any]?,
         headers: [String: String]? = nil,
-        completeOnMainThread: Bool = true,
         completion: @escaping NetworkResultCompletion
     ) -> URLSessionDataTask? {
         
