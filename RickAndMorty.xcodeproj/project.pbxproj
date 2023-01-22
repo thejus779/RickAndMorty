@@ -78,6 +78,7 @@
 		535F15AF297D2EF1007873A8 /* RMCharachter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15AD297D2EF1007873A8 /* RMCharachter.swift */; };
 		535F15B1297D313B007873A8 /* RMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15B0297D313B007873A8 /* RMData.swift */; };
 		535F15B2297D313B007873A8 /* RMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15B0297D313B007873A8 /* RMData.swift */; };
+		535F15B5297D318F007873A8 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 535F15B4297D318F007873A8 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535F15B5297D318F007873A8 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +518,7 @@
 			);
 			name = RickAndMorty;
 			packageProductDependencies = (
+				535F15B4297D318F007873A8 /* SDWebImage */,
 			);
 			productName = RickAndMorty;
 			productReference = 53497241297BE17D00609FA6 /* RickAndMorty.app */;
@@ -590,6 +593,7 @@
 			);
 			mainGroup = 53497238297BE17D00609FA6;
 			packageReferences = (
+				535F15B3297D318F007873A8 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 53497242297BE17D00609FA6 /* Products */;
 			projectDirPath = "";
@@ -1050,6 +1054,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		535F15B3297D318F007873A8 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		535F15B4297D318F007873A8 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 535F15B3297D318F007873A8 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53497239297BE17D00609FA6 /* Project object */;
 }
