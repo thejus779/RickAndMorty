@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  RickAndMorty
+
+  Created by Thejus Thejus on 22/01/2023.
+  
+*/
+
+"common.error" = "Error";
+"common.button.ok" = "OK";
+"common.error.coding" = "Coding Error";
+"common.error.unknown" = "Unknown Error";
+"common.error.noData" = "No data Error";
+"common.error.serverError" = "Server Error";
+"common.noinfo" = "No data available";
+"common.yes" = "YES";
+"common.no" = "NO";
+
+"common.episodes" = "Episodes";
+"common.charachters" = "Charachters";
+"common.Locations" = "Locations";
+
+
+"charachterDetails.mortalStatus" = "Charachter %@";
