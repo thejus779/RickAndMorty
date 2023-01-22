@@ -14,7 +14,7 @@ class CharachterDetailsViewController: UIViewController, Spawnable {
     @IBOutlet private weak var speciesLabel: UILabel!
     @IBOutlet private weak var mortalStatusLabel: UILabel!
     
-    static var storyboardName: String = "Main"
+    static var storyboardName: String = R.storyboard.main.name
     var viewModel: CharachterDetailsViewModel?
     
     static func spawn(viewModel: CharachterDetailsViewModel) -> CharachterDetailsViewController {

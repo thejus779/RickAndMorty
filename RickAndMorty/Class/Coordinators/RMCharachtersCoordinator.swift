@@ -28,7 +28,7 @@ class RMCharachtersCoordinator: NSObject, NavigatorPresentable {
             charachtersCoordinatorDelegate: self,
             viewModel: CharachtersViewModel(engine: engine)
         )
-        charachtersViewController.title = "Charachters"
+        charachtersViewController.title = R.string.localizable.commonCharachters()
         navigationController.setViewControllers([charachtersViewController], animated: false)
     }
 }
@@ -49,6 +49,6 @@ extension RMCharachtersCoordinator: TabBarRepresentable {
         UIImage(systemName: "person.circle")!
     }
     var title: String {
-        return "Charachters"
+        return R.string.localizable.commonCharachters()
     }
 }

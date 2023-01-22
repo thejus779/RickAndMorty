@@ -20,7 +20,7 @@ class CharachterDetailsViewModel {
     var name: String { charachter.name }
     var species: String { charachter.species }
     var mortalStatus: String {
-        "Charachter \(charachter.status.rawValue)"
+        R.string.localizable.charachterDetailsMortalStatus(charachter.status.rawValue)
     }
     var statusColor: UIColor {
         switch charachter.status {

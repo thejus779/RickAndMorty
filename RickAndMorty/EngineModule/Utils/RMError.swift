@@ -17,13 +17,13 @@ enum RMError: LocalizedError, Equatable {
     public var errorDescription: String? {
         switch self {
         case .codingError:
-            return "L10n.Common.Error.coding"
+            return R.string.localizable.commonErrorCoding()
         case .unknown:
-            return "L10n.Common.Error.unknown"
+            return R.string.localizable.commonErrorUnknown()
         case .noData:
-            return "L10n.Common.Error.noData"
+            return R.string.localizable.commonErrorNoData()
         case .serverError:
-            return "L10n.Common.Error.serverError"
+            return R.string.localizable.commonErrorServerError()
         }
     }
 }

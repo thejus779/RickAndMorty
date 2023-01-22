@@ -14,7 +14,7 @@ class CharachtersViewController: UIViewController, Spawnable {
     @IBOutlet private weak var loader: UIActivityIndicatorView!
     @IBOutlet private weak var noDataLabel: UILabel!
     
-    static var storyboardName: String = "Main"
+    static var storyboardName: String = R.storyboard.main.name
     
     weak var charachtersCoordinatorDelegate: RMCharachtersCoordinatorDelegate?
     var viewModel: CharachtersViewModel!
@@ -52,7 +52,7 @@ class CharachtersViewController: UIViewController, Spawnable {
         tableView.isHidden = viewModel.allCharachters.isEmpty
         tableView.reloadData()
 
-        noDataLabel.text = "No data found"
+        noDataLabel.text = R.string.localizable.commonNoinfo()
         noDataLabel.isHidden = !viewModel.allCharachters.isEmpty
     }
 }

@@ -25,7 +25,7 @@ class RMEpisodesCoordinator: NSObject, NavigatorPresentable {
         let episodesViewController = EpisodesViewController.spawn(
             viewModel: EpisodesViewModel(engine: engine)
         )
-        episodesViewController.title = "Episodes"
+        episodesViewController.title = R.string.localizable.commonEpisodes()
         navigationController.setViewControllers([episodesViewController], animated: false)
     }
 }
@@ -38,6 +38,6 @@ extension RMEpisodesCoordinator: TabBarRepresentable {
         UIImage(systemName: "video.circle")!
     }
     var title: String {
-        return "Episodes"
+        return R.string.localizable.commonEpisodes()
     }
 }

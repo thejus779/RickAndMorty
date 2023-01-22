@@ -9,7 +9,7 @@ import UIKit
 
 class EpisodesViewController: UIViewController, Spawnable {
     
-    static var storyboardName: String = "Main"
+    static var storyboardName: String = R.storyboard.main.name
     
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var loader: UIActivityIndicatorView!
@@ -48,7 +48,7 @@ class EpisodesViewController: UIViewController, Spawnable {
         tableView.isHidden = viewModel.allEpisodes.isEmpty
         tableView.reloadData()
 
-        noDataLabel.text = "No data found"
+        noDataLabel.text = R.string.localizable.commonNoinfo()
         noDataLabel.isHidden = !viewModel.allEpisodes.isEmpty
     }
 }

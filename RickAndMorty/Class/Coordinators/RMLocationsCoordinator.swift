@@ -24,7 +24,7 @@ class RMLocationsCoordinator: NSObject, NavigatorPresentable {
         let locationsViewController = LocationsViewController.spawn(
             viewModel: LocationsViewModel(engine: engine)
         )
-        locationsViewController.title = "Locations"
+        locationsViewController.title = R.string.localizable.commonLocations()
         navigationController.setViewControllers([locationsViewController], animated: false)
 
     }
@@ -38,6 +38,6 @@ extension RMLocationsCoordinator: TabBarRepresentable {
         UIImage(systemName: "location.circle")!
     }
     var title: String {
-        return "Locations"
+        return R.string.localizable.commonLocations()
     }
 }

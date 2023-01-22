@@ -29,7 +29,7 @@ class RMNetworkService: RMService {
                 case .success(data: let data):
                     if let data = data {
                         do {
-                            var decoder = JSONDecoder()
+                            let decoder = JSONDecoder()
                             let df = DateFormatter()
                             df.dateFormat = "MMMM d, yyyy"
                             decoder.dateDecodingStrategy = .formatted(df)
