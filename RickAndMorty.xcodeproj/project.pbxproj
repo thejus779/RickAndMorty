@@ -63,6 +63,7 @@
 		535F15F8297DC086007873A8 /* RMServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F15F7297DC086007873A8 /* RMServiceTest.swift */; };
 		535F15FB297DC0E5007873A8 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 535F15FA297DC0E5007873A8 /* SDWebImage */; };
 		535F15FD297DC0E9007873A8 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 535F15FC297DC0E9007873A8 /* RswiftLibrary */; };
+		535F1606297DD43C007873A8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 535F1605297DD43C007873A8 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		535F15EC297DB14B007873A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		535F15EE297DB14B007873A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Localizable.strings; sourceTree = "<group>"; };
 		535F15F7297DC086007873A8 /* RMServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMServiceTest.swift; sourceTree = "<group>"; };
+		535F1605297DD43C007873A8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		53497238297BE17D00609FA6 = {
 			isa = PBXGroup;
 			children = (
+				535F1605297DD43C007873A8 /* README.md */,
 				53497243297BE17D00609FA6 /* RickAndMorty */,
 				5349725A297BE17E00609FA6 /* RickAndMortyTests */,
 				53497264297BE17E00609FA6 /* RickAndMortyUITests */,
@@ -667,6 +670,7 @@
 			files = (
 				535F15F1297DB14C007873A8 /* Localizable.strings in Resources */,
 				5349724E297BE17E00609FA6 /* Assets.xcassets in Resources */,
+				535F1606297DD43C007873A8 /* README.md in Resources */,
 				535F15EF297DB14C007873A8 /* LaunchScreen.storyboard in Resources */,
 				5349724C297BE17D00609FA6 /* Main.storyboard in Resources */,
 			);
