@@ -19,14 +19,11 @@ class RMLocationsCoordinator: NSObject, NavigatorPresentable {
     init(engine: Engine) {
         self.engine = engine
         navigationController = HideBackTitleNavigationController()
-        
         super.init()
-                
-//        let searchProductsViewController = SearchProductsViewController.spawn(
-//            searchCoordinatorDelegate: self,
-//            viewModel: SearchProductsViewModel(engine: engine)
-//        )
-//        navigationController.setViewControllers([searchProductsViewController], animated: false)
+
+        let locationsViewController = LocationsViewController.spawn()
+        navigationController.setViewControllers([locationsViewController], animated: false)
+        navigationController.navigationBar.isHidden = true
 
     }
 }
@@ -36,9 +33,8 @@ extension RMLocationsCoordinator: RMLocationsCoordinatorDelegate {
 
 extension RMLocationsCoordinator: TabBarRepresentable {
     var icon: UIImage {
-        return UIImage()
+        UIImage(systemName: "location.circle")!
     }
-
     var title: String {
         return "Locations"
     }

@@ -23,9 +23,9 @@ class RMCharachtersCoordinator: NSObject, NavigatorPresentable {
         
         super.init()
                 
-        let ch = CharachtersViewController.spawn()
-        navigationController.setViewControllers([ch], animated: false)
-
+        let charachtersViewController = CharachtersViewController.spawn()
+        navigationController.setViewControllers([charachtersViewController], animated: false)
+        navigationController.navigationBar.isHidden = true
     }
 }
 
@@ -33,9 +33,8 @@ extension RMCharachtersCoordinator: RMCharachtersCoordinatorDelegate {}
 
 extension RMCharachtersCoordinator: TabBarRepresentable {
     var icon: UIImage {
-        UIImage(systemName: "xmark.circle")!
+        UIImage(systemName: "person.circle")!
     }
-
     var title: String {
         return "Cast"
     }

@@ -34,20 +34,7 @@ class AppCoordinator {
         
     }
     
-//    // MARK: - Root controller
-//    private func configureMainController() {
-//        let coordinator = configureChrachtersCoordinator()
-//        window.rootViewController = coordinator.navigationController
-//        rootController = coordinator.navigationController
-//
-//    }
-    
-//    private func configureChrachtersCoordinator() -> RMCharachtersCoordinator {
-//        let coordinator = RMCharachtersCoordinator(engine: engine)
-//        self.rMCharachtersCoordinator = coordinator
-//        return coordinator
-//    }
-//
+    // MARK: - Root controller
     func configureMainController() {
         let tabController = RMTabController(engine: engine)
         window.rootViewController = tabController
@@ -73,15 +60,11 @@ class AppCoordinator {
             self.rMCharachtersCoordinator = RMCharachtersCoordinator(engine: engine)
             return self.rMCharachtersCoordinator!
         case .locations:
-//            self.rMLocationsCoordinator = RMLocationsCoordinator(engine: engine)
-//            return self.rMLocationsCoordinator!
-            self.rMCharachtersCoordinator = RMCharachtersCoordinator(engine: engine)
-            return self.rMCharachtersCoordinator!
+            self.rMLocationsCoordinator = RMLocationsCoordinator(engine: engine)
+            return self.rMLocationsCoordinator!
         case .episodes:
-//            self.rMEpisodesCoordinator = RMEpisodesCoordinator(engine: engine)
-//            return self.rMEpisodesCoordinator!
-            self.rMCharachtersCoordinator = RMCharachtersCoordinator(engine: engine)
-            return self.rMCharachtersCoordinator!
+            self.rMEpisodesCoordinator = RMEpisodesCoordinator(engine: engine)
+            return self.rMEpisodesCoordinator!
         }
     }
 }

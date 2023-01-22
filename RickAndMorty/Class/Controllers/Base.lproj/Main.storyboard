@@ -16,21 +16,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3A-0X-Xyj">
-                                <rect key="frame" x="131" y="342" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ojp-3u-l30">
+                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ojp-3u-l30" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Lq-UV-REv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ojp-3u-l30" secondAttribute="trailing" id="Gcn-zM-wVD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ojp-3u-l30" secondAttribute="bottom" id="aud-Zm-kmm"/>
+                            <constraint firstItem="ojp-3u-l30" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pD3-rs-Dcq"/>
+                        </constraints>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="41.53846153846154" y="-4.2654028436018958"/>
+        </scene>
+        <!--Charachter Details View Controller-->
+        <scene sceneID="43X-1e-Y9O">
+            <objects>
+                <viewController storyboardIdentifier="CharachterDetailsViewController" id="gSu-ud-yYT" customClass="CharachterDetailsViewController" customModule="RickAndMorty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Ex-aa-T3s">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="h1G-gi-1LQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNg-lu-hN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="675"/>
+        </scene>
+        <!--Locations View Controller-->
+        <scene sceneID="7g4-I4-33L">
+            <objects>
+                <viewController storyboardIdentifier="LocationsViewController" id="9VI-A3-LBm" customClass="LocationsViewController" customModule="RickAndMorty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZXd-kD-PgA">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HyZ-m0-wSh">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="810"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bPr-US-lpP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bPr-US-lpP" firstAttribute="bottom" secondItem="HyZ-m0-wSh" secondAttribute="bottom" id="Er2-cE-cHO"/>
+                            <constraint firstItem="HyZ-m0-wSh" firstAttribute="top" secondItem="ZXd-kD-PgA" secondAttribute="top" id="KzL-ba-hA6"/>
+                            <constraint firstItem="HyZ-m0-wSh" firstAttribute="leading" secondItem="bPr-US-lpP" secondAttribute="leading" id="U2D-Et-hJj"/>
+                            <constraint firstAttribute="trailing" secondItem="HyZ-m0-wSh" secondAttribute="trailing" id="qmI-FH-ex0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1An-8s-mhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800" y="-4"/>
+        </scene>
+        <!--Episodes View Controller-->
+        <scene sceneID="kso-53-TPK">
+            <objects>
+                <viewController storyboardIdentifier="EpisodesViewController" id="R7g-Vt-tbd" customClass="EpisodesViewController" customModule="RickAndMorty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TPU-EK-caK">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DPL-RH-Sng">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="810"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oN2-3E-3PB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DPL-RH-Sng" firstAttribute="leading" secondItem="TPU-EK-caK" secondAttribute="leading" id="LFQ-7h-qEb"/>
+                            <constraint firstItem="DPL-RH-Sng" firstAttribute="top" secondItem="TPU-EK-caK" secondAttribute="top" id="OGd-ko-koM"/>
+                            <constraint firstItem="oN2-3E-3PB" firstAttribute="trailing" secondItem="DPL-RH-Sng" secondAttribute="trailing" id="leV-R1-QCE"/>
+                            <constraint firstItem="oN2-3E-3PB" firstAttribute="bottom" secondItem="DPL-RH-Sng" secondAttribute="bottom" id="zps-eb-h9A"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8C-O3-6OM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="-4"/>
         </scene>
     </scenes>
     <resources>

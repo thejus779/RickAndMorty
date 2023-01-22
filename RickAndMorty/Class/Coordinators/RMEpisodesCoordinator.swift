@@ -20,15 +20,11 @@ class RMEpisodesCoordinator: NSObject, NavigatorPresentable {
     init(engine: Engine) {
         self.engine = engine
         navigationController = HideBackTitleNavigationController()
-        
         super.init()
                 
-//        let searchProductsViewController = SearchProductsViewController.spawn(
-//            searchCoordinatorDelegate: self,
-//            viewModel: SearchProductsViewModel(engine: engine)
-//        )
-//        navigationController.setViewControllers([searchProductsViewController], animated: false)
-
+        let episodesViewController = EpisodesViewController.spawn()
+        navigationController.setViewControllers([episodesViewController], animated: false)
+        navigationController.navigationBar.isHidden = true
     }
 }
 
@@ -37,9 +33,8 @@ extension RMEpisodesCoordinator: RMEpisodesCoordinatorDelegate {
 
 extension RMEpisodesCoordinator: TabBarRepresentable {
     var icon: UIImage {
-        return UIImage()
+        UIImage(systemName: "video.circle")!
     }
-
     var title: String {
         return "Episodes"
     }
