@@ -17,6 +17,12 @@ class EpisodesViewController: UIViewController, Spawnable {
     
     var viewModel: EpisodesViewModel!
     
+    static func spawn(viewModel: EpisodesViewModel) -> EpisodesViewController {
+        let controller = EpisodesViewController.spawn()
+        controller.viewModel = viewModel
+        return controller
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
@@ -55,13 +61,13 @@ extension EpisodesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard   let cell = tableView.dequeueReusableCell(
-            withIdentifier: CharachterCell.kReuseIdentifier,
+            withIdentifier: EpisodeCell.kReuseIdentifier,
             for: indexPath
-        ) as? CharachterCell
+        ) as? EpisodeCell
         else { fatalError("Developer error, wrong cell") }
         
         cell.configure(
-            viewModel: CharachterCellViewModel(charachter: viewModel.allEpisodes[indexPath.row])
+            viewModel: EpisodeCellViewModel(episode: viewModel.allEpisodes[indexPath.row])
         )
         // Local pagination, Last cell reached, load more data if needed
         if indexPath.item == viewModel.allEpisodes.count - 1 {

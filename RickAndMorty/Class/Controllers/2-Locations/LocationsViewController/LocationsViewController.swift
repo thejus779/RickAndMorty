@@ -61,13 +61,13 @@ extension LocationsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard   let cell = tableView.dequeueReusableCell(
-            withIdentifier: CharachterCell.kReuseIdentifier,
+            withIdentifier: LocationCell.kReuseIdentifier,
             for: indexPath
-        ) as? CharachterCell
+        ) as? LocationCell
         else { fatalError("Developer error, wrong cell") }
         
         cell.configure(
-            viewModel: CharachterCellViewModel(charachter: viewModel.allLocations[indexPath.row])
+            viewModel: LocationCellViewModel(location: viewModel.allLocations[indexPath.row])
         )
         // Local pagination, Last cell reached, load more data if needed
         if indexPath.item == viewModel.allLocations.count - 1 {

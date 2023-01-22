@@ -29,7 +29,12 @@ class RMNetworkService: RMService {
                 case .success(data: let data):
                     if let data = data {
                         do {
-                            let epResponse = try JSONDecoder().decode(RMData<RMEpisode>.self, from: data)
+                            var decoder = JSONDecoder()
+                            let df = DateFormatter()
+                            df.dateFormat = "MMMM d, yyyy"
+                            decoder.dateDecodingStrategy = .formatted(df)
+                            
+                            let epResponse = try decoder.decode(RMData<RMEpisode>.self, from: data)
                             completion(.success(epResponse))
                             print("[RMNetworkService] getAllEpisodes success for page \(pageNo)")
                         } catch let error {
@@ -55,7 +60,7 @@ class RMNetworkService: RMService {
         
         // get all locations network call
         networkClient?.request(
-            endpoint: RMEndPoints.getCharacters,
+            endpoint: RMEndPoints.getLocations,
             parameters: parameters,
             completion: { result in
                 switch result {

@@ -22,9 +22,11 @@ class RMEpisodesCoordinator: NSObject, NavigatorPresentable {
         navigationController = HideBackTitleNavigationController()
         super.init()
                 
-        let episodesViewController = EpisodesViewController.spawn()
+        let episodesViewController = EpisodesViewController.spawn(
+            viewModel: EpisodesViewModel(engine: engine)
+        )
+        episodesViewController.title = "Episodes"
         navigationController.setViewControllers([episodesViewController], animated: false)
-        navigationController.navigationBar.isHidden = true
     }
 }
 

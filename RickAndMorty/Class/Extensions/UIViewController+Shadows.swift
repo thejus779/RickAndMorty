@@ -13,7 +13,7 @@ struct ShadowStyle {
     let offset: CGFloat
     let radius: CGFloat
     
-    static let medium = ShadowStyle(opacity: 0.3, offset: 3, radius: 5)
+    static let medium = ShadowStyle(opacity: 0.15, offset: 3, radius: 5)
 }
 
 extension UIView {

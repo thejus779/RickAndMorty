@@ -21,9 +21,11 @@ class RMLocationsCoordinator: NSObject, NavigatorPresentable {
         navigationController = HideBackTitleNavigationController()
         super.init()
 
-        let locationsViewController = LocationsViewController.spawn()
+        let locationsViewController = LocationsViewController.spawn(
+            viewModel: LocationsViewModel(engine: engine)
+        )
+        locationsViewController.title = "Locations"
         navigationController.setViewControllers([locationsViewController], animated: false)
-        navigationController.navigationBar.isHidden = true
 
     }
 }

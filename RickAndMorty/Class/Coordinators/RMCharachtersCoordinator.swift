@@ -28,15 +28,17 @@ class RMCharachtersCoordinator: NSObject, NavigatorPresentable {
             charachtersCoordinatorDelegate: self,
             viewModel: CharachtersViewModel(engine: engine)
         )
+        charachtersViewController.title = "Charachters"
         navigationController.setViewControllers([charachtersViewController], animated: false)
-        navigationController.navigationBar.isHidden = true
     }
 }
 
 extension RMCharachtersCoordinator: RMCharachtersCoordinatorDelegate {
     func showDetails(of character: RMCharachter) {
         let charachterDetailsViewController = CharachterDetailsViewController.spawn(
-            viewModel: CharachterDetailsViewModel(engine: engine)
+            viewModel: CharachterDetailsViewModel(
+                engine: engine, charachter: character
+            )
         )
         navigationController.pushViewController(charachterDetailsViewController, animated: true)
     }

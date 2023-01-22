@@ -8,17 +8,16 @@
 import UIKit
 import SDWebImage
 
-class CharachterCell: UITableViewCell {
+class CharachterCell: UITableViewCell, ShadowWrapped {
 
-    @IBOutlet private weak var containerView: UIView!
+    @IBOutlet internal weak var containerView: UIView!
     @IBOutlet private weak var charachterImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var speciesLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        containerView.layer.cornerRadius = 6
-        containerView.shadowStyle = .medium
+        configureShadowedContainer()
     }
     
     func configure(viewModel: CharachterCellViewModel) {

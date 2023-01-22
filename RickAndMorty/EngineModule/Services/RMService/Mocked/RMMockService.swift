@@ -37,8 +37,8 @@ class RMMockService: RMService {
                 RMData(
                     info: RMData.RMInfo(pages: 1),
                     results: [
-                        RMLocation(id: 1, name: "Loc 1", type: "Type1", dimension: "Dimension 1", residents: []),
-                        RMLocation(id: 2, name: "Loc 2", type: "Type2", dimension: "Dimension 2", residents: [])
+                        RMLocation(id: 1, name: "Loc 1", type: "Type1"),
+                        RMLocation(id: 2, name: "Loc 2", type: "Type2")
                     ]
                 )
             )

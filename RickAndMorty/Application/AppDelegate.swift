@@ -35,7 +35,7 @@ extension AppDelegate {
         appearance.configureWithTransparentBackground()
         appearance.backgroundColor = color
         appearance.titleTextAttributes = [
-            .font: UIFont.boldSystemFont(ofSize: 16.0),
+            .font: UIFont.boldSystemFont(ofSize: 18.0),
             .foregroundColor: UIColor.white
         ]
         navBarAppearance.standardAppearance = appearance
